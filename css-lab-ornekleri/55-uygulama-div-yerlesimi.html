@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uygulama - Div Çerçeve Yerleşimi</title>
+  <style>
+    * {
+      box-sizing: border-box; /* Tüm elemanların margin, border, padding değerleri öğenin genişliği içine dahil edilir. */
+    }
+
+    body {
+      margin: 0px;
+      background: #f2F3F7;
+      padding: 0px;
+    }
+
+    .icerik {
+      position: relative;
+      margin-top: 20px;
+      padding: 10px;
+      display: flex; /* önemli: içeriğine göre genişler */
+      background-color: #9ff;
+    }
+
+    .icerikSol {
+      float: left;
+      padding: 10px;
+      width: 75%;
+      background-color: #ff9;
+    }
+
+    .icerikSag {
+      float: right;
+      padding: 10px;
+      width: 25%;
+      background-color: #f9f;
+    }
+
+    .proje { background-color: #ff9; }
+
+    .projeIcerik {
+      position: relative;
+      background-color: black;
+      width: 100%;
+    }
+
+    .imgProjeResim { width: 100%; display: block; }
+
+    .aProjeMetin {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 111, 97, .7);
+      transition: all 0.3s;
+      opacity: 0;
+    }
+
+    .aProjeMetin p {
+      width: 100%;
+      text-align: center;
+      color: blue;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+
+    .aProjeMetin:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="icerik">
+    <div class="icerikSol">
+      SOL TARAF<br>
+      SOL TARAF<br>
+      SOL TARAF<br>
+      SOL TARAF<br>
+      SOL TARAF<br>
+    </div>
+
+    <div class="icerikSag">
+      <div class="proje">
+        <div class="projeIcerik">
+          <img class="imgProjeResim" src="Resimler/resimArGe.png" alt="Ar-Ge">
+          <a class="aProjeMetin" href="#">
+            <p>Proje çalışmaları için akademisyen ve uzmanlarla işbirliği yapabilirsiniz!</p>
+          </a>
+        </div>
+        <div class="projeIcerik">
+          <img class="imgProjeResim" src="Resimler/resimProje2.png" alt="Proje">
+          <a class="aProjeMetin" href="#">
+            <p>Arge projeleriniz için hibe ve kredi desteklerine ulaşabilirsiniz!</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

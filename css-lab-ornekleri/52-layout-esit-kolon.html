@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eşit Kolon Uygulaması</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+
+    /* Başlığın stili */
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Gezinti çubuğunun stili */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Gezinti çubuğundaki linklerin stili */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Linkin üzerine gelince alacağı stil */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Kolonlar soldan birbirine bitişik olacak. Her biri içinde bulunduğu (row) satır div nin %33,33 genişliğinde olacak. */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    /* kolonlardan sonra float (yapışıklık) işlemini kaldırıyor. */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Cihaz ekranı 600px den düşük olduğunda kolon genişliği %100 olacak */
+    @media screen and (max-width: 600px) {
+      .column { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Başlık (Header)</h1>
+    <p>Kolonların cihaz ekranına göre değiştiğini görebilmek için tarayıcınızın boyutunu küçültün</p>
+  </div>
+
+  <div class="topnav">
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+    <a href="#">Link3</a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <h2>Kolon 1</h2>
+      <p>Üstbilgi yada başlık genellikle web sitesinin en üstünde (veya bir üst gezinme menüsünün hemen altında) bulunur. Genellikle bir logo veya web sitesi adını içerir. Üstbilgi yada başlık genellikle web sitesinin en üstünde (veya bir üst gezinme menüsünün hemen altında) bulunur. Genellikle bir logo veya web sitesi adını içerir.</p>
+    </div>
+
+    <div class="column">
+      <h2>Kolon 2</h2>
+      <p>Gezinme çubuğu, ziyaretçilerin web sitenizde gezinmesine yardımcı olacak bir bağlantıları ve listeleri içerir. Gezinme çubuğu, ziyaretçilerin web sitenizde gezinmesine yardımcı olacak bir bağlantıları ve listeleri içerir.</p>
+    </div>
+
+    <div class="column">
+      <h2>Kolon 3</h2>
+      <p>İçerik kısmındaki düzen genellikle hedef kullanıcılara ve kullanılan cihaza göre belirlenir. En yaygın düzen, aşağıdakilerin kombinasyonu şeklindedir. 1 sütun (genellikle cep telefonları için kullanılır), 2 sütun (genellikle tabletler için kullanılır), 3 sütun (masaüstü, dizüstü bilgisayarlar için kullanılır)</p>
+    </div>
+  </div>
+</body>
+</html>

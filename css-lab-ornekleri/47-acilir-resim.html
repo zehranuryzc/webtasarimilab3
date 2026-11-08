@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Açılır Resim</title>
+  <style>
+    .AcilirMenu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .AcilirMenu_Icerik {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .AcilirMenu:hover .AcilirMenu_Icerik { display: block; }
+
+    .Etiket {
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Açılır Resim Uygulaması</h2>
+  <p>Mouse ile küçük resmin üzerine gelince büyük resim açılır.</p>
+
+  <div class="AcilirMenu">
+    <img src="Resimler/ResimKucuk.jpg" alt="Küçük resim" width="100">
+    <div class="AcilirMenu_Icerik">
+      <img src="Resimler/ResimBuyuk.jpg" alt="Büyük resim" width="300">
+      <div class="Etiket">Ayasofya Camisi</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>position: absolute;</title>
+  <style>
+    div.relative {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #73AD21;
+    }
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+  </style>
+</head>
+<body>
+  <h2>position: absolute;</h2>
+  <p>Bir eleman absolute; olarak pozisyonlandığında içinde bulunduğu bir üst nesnenin içerisinde konumlanır.</p>
+
+  <div class="relative">
+    Bu div elemanı relative; olarak konumlanmıştır.
+    <div class="absolute">Bu eleman ise absolute; olarak konumlandırılmıştır.</div>
+  </div>
+</body>
+</html>

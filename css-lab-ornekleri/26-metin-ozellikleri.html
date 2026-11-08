@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Metin (Text) Özellikleri</title>
+  <style>
+    p { background-color: lightgrey; }
+    .renk { color: blue; }
+    .ortala { text-align: center; }
+    .iki-yana { text-align: justify; }
+    .buyuk { text-transform: uppercase; }
+    .kucuk { text-transform: lowercase; }
+    .ilk-harf { text-transform: capitalize; }
+    .girinti { text-indent: 50px; }
+    .harf-arasi { letter-spacing: 3px; }
+    .harf-eksi { letter-spacing: -3px; }
+    .kelime-arasi { word-spacing: 10px; }
+    .satir-sik { line-height: 0.8; }
+    .satir-acik { line-height: 1.8; }
+    .tek-satir { white-space: nowrap; }
+    .golge { text-shadow: 2px 4px 6px red; }
+    a.linksiz { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1 class="golge">text-shadow: 2px 4px 6px red;</h1>
+  <p class="renk">color: blue;</p>
+  <p class="ortala">text-align: center;</p>
+  <p class="iki-yana">text-align: justify; Bu metin her iki tarafa yaslanır. Bu metin her iki tarafa yaslanır. Bu metin her iki tarafa yaslanır. Bu metin her iki tarafa yaslanır. Bu metin her iki tarafa yaslanır.</p>
+  <p class="buyuk">text-transform: uppercase;</p>
+  <p class="kucuk">TEXT-TRANSFORM: LOWERCASE;</p>
+  <p class="ilk-harf">text-transform: capitalize; ilk harfleri büyük olur</p>
+  <p class="girinti">text-indent: 50px; Satır girintisi ayarlanır. Satır girintisi ayarlanır. Satır girintisi ayarlanır. Satır girintisi ayarlanır.</p>
+  <p class="harf-arasi">letter-spacing: 3px;</p>
+  <p class="harf-eksi">letter-spacing: -3px;</p>
+  <p class="kelime-arasi">word-spacing: 10px; kelimeler arası boşluk</p>
+  <p class="satir-sik">line-height: 0.8; Satırlar arası boşluk sıkışık. Satırlar arası boşluk sıkışık. Satırlar arası boşluk sıkışık. Satırlar arası boşluk sıkışık. Satırlar arası boşluk sıkışık.</p>
+  <p class="satir-acik">line-height: 1.8; Satırlar arası boşluk açık. Satırlar arası boşluk açık. Satırlar arası boşluk açık. Satırlar arası boşluk açık. Satırlar arası boşluk açık.</p>
+  <p class="tek-satir">white-space: nowrap; Bu metin satır sonuna gelince alt satıra inmez, sayfanın dışına taşar. Bu metin satır sonuna gelince alt satıra inmez.</p>
+  <a class="linksiz" href="#">text-decoration: none; (link alt çizgisi yok)</a>
+</body>
+</html>

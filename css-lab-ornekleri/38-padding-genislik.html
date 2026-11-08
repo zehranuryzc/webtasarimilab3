@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Padding ve Öğenin Genişliği</title>
+  <style>
+    div { border: 1px solid blue; }
+
+    div.Ornek1 {
+      width: 300px;
+      background-color: yellow;
+    }
+
+    div.Ornek2 {
+      width: 300px;
+      padding: 25px;
+      background-color: lightblue;
+    }
+
+    div.Ornek3 {
+      width: 300px;
+      padding: 25px;
+      margin: 25px;
+      border: 10px solid orange;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Padding ve Öğenin Genişliğini Ayarlama</h2>
+  <div>
+    <div class="Ornek1">Bu div öğesinin genişliği 300px ayarlanmıştır. İçerisinde padding kullanılmamıştır.</div>
+    <br>
+    <div class="Ornek2">Bu öğenin de genişliği 300px ayarlanmış fakat iç kısma dört yönden 25px padding boşluğu eklenmiştir. Bu boşluklar öğenin genişliğinin 350px görünmesine neden olmuştur.</div>
+    <div class="Ornek3">Bu div içerisinde padding:25px, border:10px, margin:25px kullanılmıştır. Öğenin genişliği 300px olmasına rağmen, bütün bu eklenenlerden dolayı öğenin genişliği toplamda 120px genişlemiştir.</div>
+  </div>
+</body>
+</html>

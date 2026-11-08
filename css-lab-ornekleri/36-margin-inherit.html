@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Margin: inherit</title>
+  <style>
+    div {
+      border: 1px solid red;
+      margin-left: 100px;
+    }
+    p { margin-left: inherit; }
+  </style>
+</head>
+<body>
+  <h2>inherit Özelliğinin Kullanımı</h2>
+  <p>Burası bir div'in dışında bir paragraftır. Sol tarafın özelliğini üst öğe olan body den almaktadır ama onun boşluğu yoktur.</p>
+  <div>
+    <p>Burası div'in içinde bir paragraftır. Çerçeve div'e aittir. İçteki paragraf sol tarafındaki boşluğu üst öğe olan div'den almaktadır. Div in sol tarafında 100px boşluk olduğu için bu öğe de aynı boşluğa sahip olmaktadır.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kenarlık Kalınlığı (border-width)</title>
+  <style>
+    p.bir { border-style: solid; border-width: 5px; }
+    p.iki { border-style: dashed; border-width: medium; }
+    p.uc { border-style: dotted; border-width: 2px; }
+    p.dort { border-style: dotted; border-width: thick; }
+    p.bes { border-style: double; border-width: 15px; }
+    p.alti { border-style: double; border-width: thick; }
+
+    p.y1 { border-style: solid; border-width: 20px; }
+    p.y2 { border-style: solid; border-width: 20px 15px; }
+    p.y3 { border-style: solid; border-width: 20px 15px 10px; }
+    p.y4 { border-style: solid; border-width: 20px 15px 10px 5px; }
+  </style>
+</head>
+<body>
+  <h2>border-width Özelliği</h2>
+  <p>Kenarlık kalınlığı 4 çeşit kenarlık tipine (solid, dashed, dotted, double) uygulanabilir.</p>
+  <p class="bir">"border-style: solid; border-width: 5px;"</p>
+  <p class="iki">"border-style: dashed; border-width: medium;"</p>
+  <p class="uc">"border-style: dotted; border-width: 2px;"</p>
+  <p class="dort">"border-style: dotted; border-width: thick;"</p>
+  <p class="bes">"border-style: double; border-width: 15px;"</p>
+  <p class="alti">"border-style: double; border-width: thick;"</p>
+  <p><b>Not:</b> "border-width" tek başına kullanılmaz. Önce "border-style" özelliği ayarlanmalı.</p>
+
+  <h2>4 yöne farklı kalınlık</h2>
+  <p class="y1">border-width: 20px; (hepsi 20px)</p>
+  <p class="y2">border-width: 20px 15px; (üst-alt 20px, sağ-sol 15px)</p>
+  <p class="y3">border-width: 20px 15px 10px; (üst 20px, sağ-sol 15px, alt 10px)</p>
+  <p class="y4">border-width: 20px 15px 10px 5px; (üst 20, sağ 15, alt 10, sol 5)</p>
+</body>
+</html>

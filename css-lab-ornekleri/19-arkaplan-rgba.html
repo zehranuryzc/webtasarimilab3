@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RGBA ile Arka Planı Şeffaf Yapma</title>
+  <style>
+    div { background: rgb(0, 128, 0); }
+    div.first { background: rgba(0, 128, 0, 0.1); }
+    div.second { background: rgba(0, 128, 0, 0.3); }
+    div.third { background: rgba(0, 128, 0, 0.6); }
+  </style>
+</head>
+<body>
+  <h2>RGBA kodlaması kullanılarak şeffaf yapma</h2>
+  <div class="first"><h1>10% saydam, Alfa=0.1</h1></div>
+  <div class="second"><h1>30% saydam, Alfa=0.3</h1></div>
+  <div class="third"><h1>60% saydam, Alfa=0.6</h1></div>
+  <div><h1>Varsayılan değer Alfa atanmamıştır ama 1.0 dır.</h1></div>
+
+  <p>Dikkat edilirse RGBA ile arka plan saydam yapılırken üzerindeki yazı/içteki öğe saydam olmamaktadır.</p>
+</body>
+</html>
